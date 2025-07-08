@@ -1,0 +1,12 @@
+# Exported from Render on 2025-07-08T21:06:44Z
+services:
+- type: web
+  name: -stripe-gps-backend
+  runtime: node
+  repo: https://github.com/GRETA1212/-stripe-gps-backend
+  plan: free
+  region: oregon
+  buildCommand: yarn
+  startCommand: yarn start
+  autoDeployTrigger: commit
+version: "1"
